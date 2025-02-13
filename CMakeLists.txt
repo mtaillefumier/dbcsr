@@ -130,8 +130,9 @@ if (WITH_C_API AND WITH_EXAMPLES)
   enable_language(C)
 endif ()
 
-# always use at least C++11
-set(CMAKE_CXX_STANDARD 11)
+# always use at least C++14
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CUDA_STANDARD 14)
 
 # =================================== OpenMP
 if (USE_OPENMP)
